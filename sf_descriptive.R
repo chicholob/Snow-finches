@@ -3,6 +3,7 @@ d.bird <- read_delim("C:/Users/joela/OneDrive - ETH Zurich/FS23/Snow-finches/Dat
                           delim = ";", escape_double = FALSE, trim_ws = TRUE)
 str(d.bird)
 summary(d.bird)
+table(d.bird)
 
 # Response variable transformation
 d.bird$sex_genetics[d.bird$sex_genetics == "M"] <- "m"
